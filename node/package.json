@@ -1,0 +1,20 @@
+{
+  "name": "lorl-server",
+  "version": "1.0.0",
+  "description": "Lorl Server Host — syncs player state for Lorl games",
+  "main": "server-node.js",
+  "scripts": {
+    "start": "node server-node.js",
+    "dev": "node server-node.js",
+    "deploy:cloudflare": "wrangler deploy"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
